@@ -67,13 +67,13 @@ az group create --name <NAME> --location <REGION>
 
 az storage account create --name <STORAGE_NAME> --sku Standard_LRS
 
-az functionapp create --consumption-plan-location westeurope --runtime python --runtime-version 3.8 --functions-version 3 --name <APP_NAME> --os-type linux --storage-account <STORAGE_NAME>
+az functionapp create --consumption-plan-location westeurope --runtime python --runtime-version 3.8 --functions-version 3 --name HttpHello --os-type linux --storage-account <STORAGE_NAME>
 ```
 
 Publikuj
 
 ```
-func azure functionapp publish <APP_NAME>
+func azure functionapp publish HttpHello
 ```
 
 Sprawdź
