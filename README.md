@@ -14,7 +14,8 @@ Aplikacja wyświetla komunikat hello word dzięki Serverless - Azure Functions
 
 Pobierz repozytorium
 
-```git clone https://github.com/jszurkowski/chmura
+```
+git clone https://github.com/jszurkowski/chmura
 
 ```
 
