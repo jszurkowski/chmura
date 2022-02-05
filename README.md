@@ -16,32 +16,36 @@ Pobierz repozytorium
 
 ```
 git clone https://github.com/jszurkowski/chmura
-
 ```
 
 Zainstaluj środowisko wirtualne
 
-```python -m venv .venv
+```
+python -m venv .venv
 ```
 
 Uruchom środowisko wirtualne
 
-```source .venv/bin/activate
+```
+source .venv/bin/activate
 ```
 
 Sprawdź czy masz zainstalowane Azure Function Core Tools
 
-```func --version
+```
+func --version
 ```
 
 Jeśli nie, to zainstaluj
 
-```sudo apt-get install azure-functions-core-tools-4
+```
+sudo apt-get install azure-functions-core-tools-4
 ```
 
 Uruchom
 
-``` func start
+```
+func start
 
 # w oknie przeglądarki wklej:
 http://localhost:7071/api/HttpHello
@@ -50,14 +54,16 @@ http://localhost:7071/api/HttpHello
 
 Zaloguj się do Azure
 
-```az login
+```
+az login
 
 az config param-persist on
 ```
 
 Utwórz zasoby
 
-```az group create --name <NAME> --location <REGION>
+```
+az group create --name <NAME> --location <REGION>
 
 az storage account create --name <STORAGE_NAME> --sku Standard_LRS
 
@@ -66,12 +72,14 @@ az functionapp create --consumption-plan-location westeurope --runtime python --
 
 Publikuj
 
-```func azure functionapp publish <APP_NAME>
+```
+func azure functionapp publish <APP_NAME>
 ```
 
 Sprawdź
 
-```curl https://httphello.azurewebsites.net/api/httphello
+```
+curl https://httphello.azurewebsites.net/api/httphello
 
 Hello Word
 Jakub Xxxxxxxxxx
@@ -82,4 +90,3 @@ Na koniec wykasuj recource group
 
 ```az group delete --resource-group <NAZWA>
 ```
-# chmura
