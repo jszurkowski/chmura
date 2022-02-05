@@ -88,5 +88,6 @@ nr albumu: 6XXX7
 
 Na koniec wykasuj recource group
 
-```az group delete --resource-group <NAZWA>
+```
+az group delete --resource-group <NAZWA>
 ```
